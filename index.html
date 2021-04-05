@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--otimização para mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--framework materialize css-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--conexão com js-->
+    <script type="text/javascript" src="javascript.js"> </script>
+
+    <title>Cálculo de Venda Energéticos Acceletator</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h4>Cálculo de Venda Energéticos Acceletator</h4>
+        <div class="row">
+
+            <form method="POST" name="form" action="">
+
+                <div class="input-field col s12 m12 l6">
+                    <label>Cliente</label>
+                    <input type="text" name="cliente" id="cliente" required>
+                </div>
+
+                <div class="input-field col s12 m12 l6">
+                    <label>Quantidade</label>
+                    <input type="number" name="qtd" id="qtd" required>
+                </div>
+
+                <div class="input-field col s6 m6 l12">
+                    <input class="waves-effect waves-light btn" type="reset" name="limpa" value="Limpar">
+                    <input class="waves-effect waves-light btn" type="button" name="adicionar" value="Adicionar"
+                        onclick="enviarVenda()">
+                    <input class="waves-effect waves-light btn" type="button" name="mostrar" value="Relatório"
+                        onclick="mostrarRelatorio()">
+                </div>
+
+                <div class="input-field col s12 m12 l6">
+                    <p id="resultado"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
